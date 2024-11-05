@@ -1,0 +1,124 @@
+{
+    "hints": {
+        "create_application(uint64,uint64,string,uint64,string,string)void": {
+            "call_config": {
+                "no_op": "CREATE"
+            }
+        },
+        "authenticate_product(string)bool": {
+            "call_config": {
+                "no_op": "CALL"
+            }
+        }
+    },
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuY2hpZ2JlLmNvbnRyYWN0LkNoaWdiZS5hcHByb3ZhbF9wcm9ncmFtOgogICAgaW50Y2Jsb2NrIDAgMQogICAgYnl0ZWNibG9jayAidW5pcXVlX2NvZGUiCiAgICBjYWxsc3ViIF9fcHV5YV9hcmM0X3JvdXRlcl9fCiAgICByZXR1cm4KCgovLyBzbWFydF9jb250cmFjdHMuY2hpZ2JlLmNvbnRyYWN0LkNoaWdiZS5fX3B1eWFfYXJjNF9yb3V0ZXJfXygpIC0+IHVpbnQ2NDoKX19wdXlhX2FyYzRfcm91dGVyX186CiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjQKICAgIC8vIGNsYXNzIENoaWdiZShhcmM0LkFSQzRDb250cmFjdCk6CiAgICBwcm90byAwIDEKICAgIHR4biBOdW1BcHBBcmdzCiAgICBieiBfX3B1eWFfYXJjNF9yb3V0ZXJfX19hZnRlcl9pZl9lbHNlQDcKICAgIHB1c2hieXRlc3MgMHhlYjQ4MjJhNCAweGZmYTkyZDYxIC8vIG1ldGhvZCAiY3JlYXRlX2FwcGxpY2F0aW9uKHVpbnQ2NCx1aW50NjQsc3RyaW5nLHVpbnQ2NCxzdHJpbmcsc3RyaW5nKXZvaWQiLCBtZXRob2QgImF1dGhlbnRpY2F0ZV9wcm9kdWN0KHN0cmluZylib29sIgogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAogICAgbWF0Y2ggX19wdXlhX2FyYzRfcm91dGVyX19fY3JlYXRlX2FwcGxpY2F0aW9uX3JvdXRlQDIgX19wdXlhX2FyYzRfcm91dGVyX19fYXV0aGVudGljYXRlX3Byb2R1Y3Rfcm91dGVAMwogICAgaW50Y18wIC8vIDAKICAgIHJldHN1YgoKX19wdXlhX2FyYzRfcm91dGVyX19fY3JlYXRlX2FwcGxpY2F0aW9uX3JvdXRlQDI6CiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjE0CiAgICAvLyBAYXJjNC5hYmltZXRob2QoYWxsb3dfYWN0aW9ucz1bIk5vT3AiXSwgY3JlYXRlPSJyZXF1aXJlIikKICAgIHR4biBPbkNvbXBsZXRpb24KICAgICEKICAgIGFzc2VydCAvLyBPbkNvbXBsZXRpb24gaXMgTm9PcAogICAgdHhuIEFwcGxpY2F0aW9uSUQKICAgICEKICAgIGFzc2VydCAvLyBpcyBjcmVhdGluZwogICAgLy8gc21hcnRfY29udHJhY3RzL2NoaWdiZS9jb250cmFjdC5weTo0CiAgICAvLyBjbGFzcyBDaGlnYmUoYXJjNC5BUkM0Q29udHJhY3QpOgogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQogICAgYnRvaQogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgogICAgYnRvaQogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMwogICAgZXh0cmFjdCAyIDAKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDQKICAgIGJ0b2kKICAgIHR4bmEgQXBwbGljYXRpb25BcmdzIDUKICAgIGV4dHJhY3QgMiAwCiAgICB0eG5hIEFwcGxpY2F0aW9uQXJncyA2CiAgICBleHRyYWN0IDIgMAogICAgLy8gc21hcnRfY29udHJhY3RzL2NoaWdiZS9jb250cmFjdC5weToxNAogICAgLy8gQGFyYzQuYWJpbWV0aG9kKGFsbG93X2FjdGlvbnM9WyJOb09wIl0sIGNyZWF0ZT0icmVxdWlyZSIpCiAgICBjYWxsc3ViIGNyZWF0ZV9hcHBsaWNhdGlvbgogICAgaW50Y18xIC8vIDEKICAgIHJldHN1YgoKX19wdXlhX2FyYzRfcm91dGVyX19fYXV0aGVudGljYXRlX3Byb2R1Y3Rfcm91dGVAMzoKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy9jaGlnYmUvY29udHJhY3QucHk6MzEKICAgIC8vIEBhcmM0LmFiaW1ldGhvZAogICAgdHhuIE9uQ29tcGxldGlvbgogICAgIQogICAgYXNzZXJ0IC8vIE9uQ29tcGxldGlvbiBpcyBOb09wCiAgICB0eG4gQXBwbGljYXRpb25JRAogICAgYXNzZXJ0IC8vIGlzIG5vdCBjcmVhdGluZwogICAgLy8gc21hcnRfY29udHJhY3RzL2NoaWdiZS9jb250cmFjdC5weTo0CiAgICAvLyBjbGFzcyBDaGlnYmUoYXJjNC5BUkM0Q29udHJhY3QpOgogICAgdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQogICAgZXh0cmFjdCAyIDAKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy9jaGlnYmUvY29udHJhY3QucHk6MzEKICAgIC8vIEBhcmM0LmFiaW1ldGhvZAogICAgY2FsbHN1YiBhdXRoZW50aWNhdGVfcHJvZHVjdAogICAgcHVzaGJ5dGVzIDB4MDAKICAgIGludGNfMCAvLyAwCiAgICB1bmNvdmVyIDIKICAgIHNldGJpdAogICAgcHVzaGJ5dGVzIDB4MTUxZjdjNzUKICAgIHN3YXAKICAgIGNvbmNhdAogICAgbG9nCiAgICBpbnRjXzEgLy8gMQogICAgcmV0c3ViCgpfX3B1eWFfYXJjNF9yb3V0ZXJfX19hZnRlcl9pZl9lbHNlQDc6CiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjQKICAgIC8vIGNsYXNzIENoaWdiZShhcmM0LkFSQzRDb250cmFjdCk6CiAgICBpbnRjXzAgLy8gMAogICAgcmV0c3ViCgoKLy8gc21hcnRfY29udHJhY3RzLmNoaWdiZS5jb250cmFjdC5DaGlnYmUuY3JlYXRlX2FwcGxpY2F0aW9uKG1hbnVmYWN0dXJlX2RhdGU6IHVpbnQ2NCwgZXhwaXJ5X2RhdGU6IHVpbnQ2NCwgdW5pcXVlX2NvZGU6IGJ5dGVzLCBhc3NldF9pZDogdWludDY0LCBiYXRjaF9udW1iZXI6IGJ5dGVzLCBtYW51ZmFjdHVyZXI6IGJ5dGVzKSAtPiB2b2lkOgpjcmVhdGVfYXBwbGljYXRpb246CiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjE0LTIzCiAgICAvLyBAYXJjNC5hYmltZXRob2QoYWxsb3dfYWN0aW9ucz1bIk5vT3AiXSwgY3JlYXRlPSJyZXF1aXJlIikKICAgIC8vIGRlZiBjcmVhdGVfYXBwbGljYXRpb24oCiAgICAvLyAgICAgc2VsZiwKICAgIC8vICAgICBtYW51ZmFjdHVyZV9kYXRlOiBVSW50NjQsCiAgICAvLyAgICAgZXhwaXJ5X2RhdGU6IFVJbnQ2NCwKICAgIC8vICAgICB1bmlxdWVfY29kZTogU3RyaW5nLAogICAgLy8gICAgIGFzc2V0X2lkOiBVSW50NjQsCiAgICAvLyAgICAgYmF0Y2hfbnVtYmVyOiBTdHJpbmcsCiAgICAvLyAgICAgbWFudWZhY3R1cmVyOiBTdHJpbmcsCiAgICAvLyApIC0+IE5vbmU6CiAgICBwcm90byA2IDAKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy9jaGlnYmUvY29udHJhY3QucHk6MjQKICAgIC8vIHNlbGYuYXNzZXRfaWQgPSBhc3NldF9pZAogICAgcHVzaGJ5dGVzICJhc3NldF9pZCIKICAgIGZyYW1lX2RpZyAtMwogICAgYXBwX2dsb2JhbF9wdXQKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy9jaGlnYmUvY29udHJhY3QucHk6MjUKICAgIC8vIHNlbGYuZXhwaXJ5X2RhdGUgPSBleHBpcnlfZGF0ZQogICAgcHVzaGJ5dGVzICJleHBpcnlfZGF0ZSIKICAgIGZyYW1lX2RpZyAtNQogICAgYXBwX2dsb2JhbF9wdXQKICAgIC8vIHNtYXJ0X2NvbnRyYWN0cy9jaGlnYmUvY29udHJhY3QucHk6MjYKICAgIC8vIHNlbGYudW5pcXVlX2NvZGUgPSB1bmlxdWVfY29kZQogICAgYnl0ZWNfMCAvLyAidW5pcXVlX2NvZGUiCiAgICBmcmFtZV9kaWcgLTQKICAgIGFwcF9nbG9iYWxfcHV0CiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjI3CiAgICAvLyBzZWxmLm1hbnVmYWN0dXJlX2RhdGUgPSBtYW51ZmFjdHVyZV9kYXRlCiAgICBwdXNoYnl0ZXMgIm1hbnVmYWN0dXJlX2RhdGUiCiAgICBmcmFtZV9kaWcgLTYKICAgIGFwcF9nbG9iYWxfcHV0CiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjI4CiAgICAvLyBzZWxmLmJhdGNoX251bWJlciA9IGJhdGNoX251bWJlcgogICAgcHVzaGJ5dGVzICJiYXRjaF9udW1iZXIiCiAgICBmcmFtZV9kaWcgLTIKICAgIGFwcF9nbG9iYWxfcHV0CiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjI5CiAgICAvLyBzZWxmLm1hbnVmYWN0dXJlciA9IG1hbnVmYWN0dXJlcgogICAgcHVzaGJ5dGVzICJtYW51ZmFjdHVyZXIiCiAgICBmcmFtZV9kaWcgLTEKICAgIGFwcF9nbG9iYWxfcHV0CiAgICByZXRzdWIKCgovLyBzbWFydF9jb250cmFjdHMuY2hpZ2JlLmNvbnRyYWN0LkNoaWdiZS5hdXRoZW50aWNhdGVfcHJvZHVjdCh1bmlxdWVfY29kZTogYnl0ZXMpIC0+IHVpbnQ2NDoKYXV0aGVudGljYXRlX3Byb2R1Y3Q6CiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjMxLTMyCiAgICAvLyBAYXJjNC5hYmltZXRob2QKICAgIC8vIGRlZiBhdXRoZW50aWNhdGVfcHJvZHVjdChzZWxmLCB1bmlxdWVfY29kZTogU3RyaW5nKSAtPiBib29sOgogICAgcHJvdG8gMSAxCiAgICAvLyBzbWFydF9jb250cmFjdHMvY2hpZ2JlL2NvbnRyYWN0LnB5OjMzLTM0CiAgICAvLyAjIGNoZWNrIGlmIHRoZSB1bmlxdWUgY29kZSBpcyB2YWxpZCBmb3IgdGhlIHNtYXJ0IGNvbnRyYWN0CiAgICAvLyByZXR1cm4gc2VsZi51bmlxdWVfY29kZSA9PSB1bmlxdWVfY29kZQogICAgaW50Y18wIC8vIDAKICAgIGJ5dGVjXzAgLy8gInVuaXF1ZV9jb2RlIgogICAgYXBwX2dsb2JhbF9nZXRfZXgKICAgIGFzc2VydCAvLyBjaGVjayBzZWxmLnVuaXF1ZV9jb2RlIGV4aXN0cwogICAgZnJhbWVfZGlnIC0xCiAgICA9PQogICAgcmV0c3ViCg==",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDEwCgpzbWFydF9jb250cmFjdHMuY2hpZ2JlLmNvbnRyYWN0LkNoaWdiZS5jbGVhcl9zdGF0ZV9wcm9ncmFtOgogICAgcHVzaGludCAxIC8vIDEKICAgIHJldHVybgo="
+    },
+    "state": {
+        "global": {
+            "num_byte_slices": 5,
+            "num_uints": 3
+        },
+        "local": {
+            "num_byte_slices": 0,
+            "num_uints": 0
+        }
+    },
+    "schema": {
+        "global": {
+            "declared": {
+                "asset_id": {
+                    "type": "uint64",
+                    "key": "asset_id"
+                },
+                "batch_number": {
+                    "type": "bytes",
+                    "key": "batch_number"
+                },
+                "expiry_date": {
+                    "type": "uint64",
+                    "key": "expiry_date"
+                },
+                "manufacture_date": {
+                    "type": "uint64",
+                    "key": "manufacture_date"
+                },
+                "manufacturer": {
+                    "type": "bytes",
+                    "key": "manufacturer"
+                },
+                "name": {
+                    "type": "bytes",
+                    "key": "name"
+                },
+                "owner": {
+                    "type": "bytes",
+                    "key": "owner"
+                },
+                "unique_code": {
+                    "type": "bytes",
+                    "key": "unique_code"
+                }
+            },
+            "reserved": {}
+        },
+        "local": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "Chigbe",
+        "methods": [
+            {
+                "name": "create_application",
+                "args": [
+                    {
+                        "type": "uint64",
+                        "name": "manufacture_date"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "expiry_date"
+                    },
+                    {
+                        "type": "string",
+                        "name": "unique_code"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "asset_id"
+                    },
+                    {
+                        "type": "string",
+                        "name": "batch_number"
+                    },
+                    {
+                        "type": "string",
+                        "name": "manufacturer"
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "void"
+                }
+            },
+            {
+                "name": "authenticate_product",
+                "args": [
+                    {
+                        "type": "string",
+                        "name": "unique_code"
+                    }
+                ],
+                "readonly": false,
+                "returns": {
+                    "type": "bool"
+                }
+            }
+        ],
+        "networks": {}
+    },
+    "bare_call_config": {}
+}

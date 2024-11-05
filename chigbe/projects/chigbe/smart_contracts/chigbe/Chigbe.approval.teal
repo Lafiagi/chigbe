@@ -1,0 +1,147 @@
+#pragma version 10
+
+smart_contracts.chigbe.contract.Chigbe.approval_program:
+    intcblock 0 1
+    bytecblock "unique_code"
+    callsub __puya_arc4_router__
+    return
+
+
+// smart_contracts.chigbe.contract.Chigbe.__puya_arc4_router__() -> uint64:
+__puya_arc4_router__:
+    // smart_contracts/chigbe/contract.py:4
+    // class Chigbe(arc4.ARC4Contract):
+    proto 0 1
+    txn NumAppArgs
+    bz __puya_arc4_router___after_if_else@7
+    pushbytess 0xeb4822a4 0xffa92d61 // method "create_application(uint64,uint64,string,uint64,string,string)void", method "authenticate_product(string)bool"
+    txna ApplicationArgs 0
+    match __puya_arc4_router___create_application_route@2 __puya_arc4_router___authenticate_product_route@3
+    intc_0 // 0
+    retsub
+
+__puya_arc4_router___create_application_route@2:
+    // smart_contracts/chigbe/contract.py:14
+    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
+    txn OnCompletion
+    !
+    assert // OnCompletion is NoOp
+    txn ApplicationID
+    !
+    assert // is creating
+    // smart_contracts/chigbe/contract.py:4
+    // class Chigbe(arc4.ARC4Contract):
+    txna ApplicationArgs 1
+    btoi
+    txna ApplicationArgs 2
+    btoi
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    btoi
+    txna ApplicationArgs 5
+    extract 2 0
+    txna ApplicationArgs 6
+    extract 2 0
+    // smart_contracts/chigbe/contract.py:14
+    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
+    callsub create_application
+    intc_1 // 1
+    retsub
+
+__puya_arc4_router___authenticate_product_route@3:
+    // smart_contracts/chigbe/contract.py:31
+    // @arc4.abimethod
+    txn OnCompletion
+    !
+    assert // OnCompletion is NoOp
+    txn ApplicationID
+    assert // is not creating
+    // smart_contracts/chigbe/contract.py:4
+    // class Chigbe(arc4.ARC4Contract):
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/chigbe/contract.py:31
+    // @arc4.abimethod
+    callsub authenticate_product
+    pushbytes 0x00
+    intc_0 // 0
+    uncover 2
+    setbit
+    pushbytes 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    retsub
+
+__puya_arc4_router___after_if_else@7:
+    // smart_contracts/chigbe/contract.py:4
+    // class Chigbe(arc4.ARC4Contract):
+    intc_0 // 0
+    retsub
+
+
+// smart_contracts.chigbe.contract.Chigbe.create_application(manufacture_date: uint64, expiry_date: uint64, unique_code: bytes, asset_id: uint64, batch_number: bytes, manufacturer: bytes) -> void:
+create_application:
+    // smart_contracts/chigbe/contract.py:14-23
+    // @arc4.abimethod(allow_actions=["NoOp"], create="require")
+    // def create_application(
+    //     self,
+    //     manufacture_date: UInt64,
+    //     expiry_date: UInt64,
+    //     unique_code: String,
+    //     asset_id: UInt64,
+    //     batch_number: String,
+    //     manufacturer: String,
+    // ) -> None:
+    proto 6 0
+    // smart_contracts/chigbe/contract.py:24
+    // self.asset_id = asset_id
+    pushbytes "asset_id"
+    frame_dig -3
+    app_global_put
+    // smart_contracts/chigbe/contract.py:25
+    // self.expiry_date = expiry_date
+    pushbytes "expiry_date"
+    frame_dig -5
+    app_global_put
+    // smart_contracts/chigbe/contract.py:26
+    // self.unique_code = unique_code
+    bytec_0 // "unique_code"
+    frame_dig -4
+    app_global_put
+    // smart_contracts/chigbe/contract.py:27
+    // self.manufacture_date = manufacture_date
+    pushbytes "manufacture_date"
+    frame_dig -6
+    app_global_put
+    // smart_contracts/chigbe/contract.py:28
+    // self.batch_number = batch_number
+    pushbytes "batch_number"
+    frame_dig -2
+    app_global_put
+    // smart_contracts/chigbe/contract.py:29
+    // self.manufacturer = manufacturer
+    pushbytes "manufacturer"
+    frame_dig -1
+    app_global_put
+    retsub
+
+
+// smart_contracts.chigbe.contract.Chigbe.authenticate_product(unique_code: bytes) -> uint64:
+authenticate_product:
+    // smart_contracts/chigbe/contract.py:31-32
+    // @arc4.abimethod
+    // def authenticate_product(self, unique_code: String) -> bool:
+    proto 1 1
+    // smart_contracts/chigbe/contract.py:33-34
+    // # check if the unique code is valid for the smart contract
+    // return self.unique_code == unique_code
+    intc_0 // 0
+    bytec_0 // "unique_code"
+    app_global_get_ex
+    assert // check self.unique_code exists
+    frame_dig -1
+    ==
+    retsub

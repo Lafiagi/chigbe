@@ -1,0 +1,716 @@
+{
+  "version": 3,
+  "sources": [
+    "contract.py"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;AAGA;;;AAAA;;AAAA;;;AAAA;;;;;;;;;;;;AAAA;;;AAAA;;;;;;AAAA;AAAA;AAUK;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAVL;;;AAAA;AAAA;;;AAAA;AAAA;;;AAAA;;;AAAA;;;AAAA;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAUK;;;AAAA;AAAA;AAiBA;;AAAA;AAAA;AAAA;;AAAA;AA3BL;;;AAAA;;;AA2BK;;;AAAA;;;AAAA;AAAA;;AAAA;AAAA;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AA3BL;AAAA;AAUA;;;AAUQ;;;;;;;;;;AAAA;;AAAA;AACA;;;;;;;;;;;;;AAAA;;AAAA;AACA;AAAA;;AAAA;AACA;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AACA;;;;;;;;;;;;;;AAAA;;AAAA;AACA;;;;;;;;;;;;;;AAAA;;AAAA;;AAER;;;AAGe;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAP",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "smart_contracts.chigbe.contract.Chigbe.approval_program",
+      "params": {},
+      "block": "smart_contracts.chigbe.contract.Chigbe.approval_program",
+      "stack_in": [],
+      "op": "intcblock 0 1"
+    },
+    "5": {
+      "op": "bytecblock \"unique_code\""
+    },
+    "19": {
+      "callsub": "smart_contracts.chigbe.contract.Chigbe.__puya_arc4_router__",
+      "op": "callsub __puya_arc4_router__",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "22": {
+      "op": "return",
+      "stack_out": []
+    },
+    "23": {
+      "subroutine": "smart_contracts.chigbe.contract.Chigbe.__puya_arc4_router__",
+      "params": {},
+      "block": "__puya_arc4_router__",
+      "stack_in": [],
+      "op": "proto 0 1"
+    },
+    "26": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "28": {
+      "op": "bz __puya_arc4_router___after_if_else@7",
+      "stack_out": []
+    },
+    "31": {
+      "op": "pushbytess 0xeb4822a4 0xffa92d61 // method \"create_application(uint64,uint64,string,uint64,string,string)void\", method \"authenticate_product(string)bool\""
+    },
+    "43": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(authenticate_product(string)bool)",
+        "Method(create_application(uint64,uint64,string,uint64,string,string)void)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(create_application(uint64,uint64,string,uint64,string,string)void)",
+        "Method(authenticate_product(string)bool)",
+        "tmp%2#0"
+      ]
+    },
+    "46": {
+      "op": "match __puya_arc4_router___create_application_route@2 __puya_arc4_router___authenticate_product_route@3",
+      "stack_out": []
+    },
+    "52": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "53": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "54": {
+      "block": "__puya_arc4_router___create_application_route@2",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "56": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "57": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "58": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "60": {
+      "op": "!",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "61": {
+      "op": "assert // is creating",
+      "stack_out": []
+    },
+    "62": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "65": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "66": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "69": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "70": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%11#0"
+      ]
+    },
+    "73": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0"
+      ]
+    },
+    "76": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%13#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%13#0"
+      ]
+    },
+    "79": {
+      "op": "btoi",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0"
+      ]
+    },
+    "80": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%15#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%15#0"
+      ]
+    },
+    "83": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0"
+      ]
+    },
+    "86": {
+      "op": "txna ApplicationArgs 6",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%17#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%17#0"
+      ]
+    },
+    "89": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0"
+      ]
+    },
+    "92": {
+      "callsub": "smart_contracts.chigbe.contract.Chigbe.create_application",
+      "op": "callsub create_application",
+      "stack_out": []
+    },
+    "95": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "96": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "97": {
+      "block": "__puya_arc4_router___authenticate_product_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%19#0"
+      ],
+      "stack_out": [
+        "tmp%19#0"
+      ]
+    },
+    "99": {
+      "op": "!",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "100": {
+      "op": "assert // OnCompletion is NoOp",
+      "stack_out": []
+    },
+    "101": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "tmp%21#0"
+      ]
+    },
+    "103": {
+      "op": "assert // is not creating",
+      "stack_out": []
+    },
+    "104": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "107": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0"
+      ]
+    },
+    "110": {
+      "callsub": "smart_contracts.chigbe.contract.Chigbe.authenticate_product",
+      "op": "callsub authenticate_product",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "113": {
+      "op": "pushbytes 0x00",
+      "defined_out": [
+        "0x00",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "0x00"
+      ]
+    },
+    "116": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "0x00",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "0x00",
+        "0"
+      ]
+    },
+    "117": {
+      "op": "uncover 2",
+      "stack_out": [
+        "0x00",
+        "0",
+        "to_encode%0#0"
+      ]
+    },
+    "119": {
+      "op": "setbit",
+      "defined_out": [
+        "encoded_bool%0#0"
+      ],
+      "stack_out": [
+        "encoded_bool%0#0"
+      ]
+    },
+    "120": {
+      "op": "pushbytes 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_bool%0#0"
+      ],
+      "stack_out": [
+        "encoded_bool%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "126": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_bool%0#0"
+      ]
+    },
+    "127": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%25#0"
+      ],
+      "stack_out": [
+        "tmp%25#0"
+      ]
+    },
+    "128": {
+      "op": "log",
+      "stack_out": []
+    },
+    "129": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "130": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "131": {
+      "block": "__puya_arc4_router___after_if_else@7",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "132": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "133": {
+      "subroutine": "smart_contracts.chigbe.contract.Chigbe.create_application",
+      "params": {
+        "manufacture_date#0": "uint64",
+        "expiry_date#0": "uint64",
+        "unique_code#0": "bytes",
+        "asset_id#0": "uint64",
+        "batch_number#0": "bytes",
+        "manufacturer#0": "bytes"
+      },
+      "block": "create_application",
+      "stack_in": [],
+      "op": "proto 6 0"
+    },
+    "136": {
+      "op": "pushbytes \"asset_id\"",
+      "defined_out": [
+        "\"asset_id\""
+      ],
+      "stack_out": [
+        "\"asset_id\""
+      ]
+    },
+    "146": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "\"asset_id\"",
+        "asset_id#0 (copy)"
+      ],
+      "stack_out": [
+        "\"asset_id\"",
+        "asset_id#0 (copy)"
+      ]
+    },
+    "148": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "149": {
+      "op": "pushbytes \"expiry_date\"",
+      "defined_out": [
+        "\"expiry_date\""
+      ],
+      "stack_out": [
+        "\"expiry_date\""
+      ]
+    },
+    "162": {
+      "op": "frame_dig -5",
+      "defined_out": [
+        "\"expiry_date\"",
+        "expiry_date#0 (copy)"
+      ],
+      "stack_out": [
+        "\"expiry_date\"",
+        "expiry_date#0 (copy)"
+      ]
+    },
+    "164": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "165": {
+      "op": "bytec_0 // \"unique_code\"",
+      "defined_out": [
+        "\"unique_code\""
+      ],
+      "stack_out": [
+        "\"unique_code\""
+      ]
+    },
+    "166": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "\"unique_code\"",
+        "unique_code#0 (copy)"
+      ],
+      "stack_out": [
+        "\"unique_code\"",
+        "unique_code#0 (copy)"
+      ]
+    },
+    "168": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "169": {
+      "op": "pushbytes \"manufacture_date\"",
+      "defined_out": [
+        "\"manufacture_date\""
+      ],
+      "stack_out": [
+        "\"manufacture_date\""
+      ]
+    },
+    "187": {
+      "op": "frame_dig -6",
+      "defined_out": [
+        "\"manufacture_date\"",
+        "manufacture_date#0 (copy)"
+      ],
+      "stack_out": [
+        "\"manufacture_date\"",
+        "manufacture_date#0 (copy)"
+      ]
+    },
+    "189": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "190": {
+      "op": "pushbytes \"batch_number\"",
+      "defined_out": [
+        "\"batch_number\""
+      ],
+      "stack_out": [
+        "\"batch_number\""
+      ]
+    },
+    "204": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"batch_number\"",
+        "batch_number#0 (copy)"
+      ],
+      "stack_out": [
+        "\"batch_number\"",
+        "batch_number#0 (copy)"
+      ]
+    },
+    "206": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "207": {
+      "op": "pushbytes \"manufacturer\"",
+      "defined_out": [
+        "\"manufacturer\""
+      ],
+      "stack_out": [
+        "\"manufacturer\""
+      ]
+    },
+    "221": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"manufacturer\"",
+        "manufacturer#0 (copy)"
+      ],
+      "stack_out": [
+        "\"manufacturer\"",
+        "manufacturer#0 (copy)"
+      ]
+    },
+    "223": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "224": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "225": {
+      "subroutine": "smart_contracts.chigbe.contract.Chigbe.authenticate_product",
+      "params": {
+        "unique_code#0": "bytes"
+      },
+      "block": "authenticate_product",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "228": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "229": {
+      "op": "bytec_0 // \"unique_code\"",
+      "defined_out": [
+        "\"unique_code\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"unique_code\""
+      ]
+    },
+    "230": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "231": {
+      "op": "assert // check self.unique_code exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "232": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "maybe_value%0#0",
+        "unique_code#0 (copy)"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "unique_code#0 (copy)"
+      ]
+    },
+    "234": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "235": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}
